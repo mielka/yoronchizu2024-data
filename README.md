@@ -6,9 +6,9 @@ Other languages
 
 
 ## What is the YoronChizu(Public Opinion Map)?
-The YoronChizu(Public Opinion Map) is a service released on November 18, 2024, by Mielka, a Japanese nonprofit organization. Founded in 2016, Mielka aims to enhance democracy in Japan by "visualizing" politics, primarily led by young people. Since 2017, it has operated JAPAN CHOICE, one of Japan's largest election information platforms, which served 1.6 million users during the 2021 House of Representatives election.
+The YoronChizu(Public Opinion Map) is a service released on November 18, 2024, by Mielka, a Japanese nonprofit organization. Founded in 2016, Mielka aims to enhance democracy in Japan by visualizing politics, primarily led by young people. Since 2017, it has operated JAPAN CHOICE, one of Japan's largest election information platforms, which served 1.6 million users during the 2021 House of Representatives election.
 
-The Public Opinion Map allows users to anonymously vote on specific issues from party manifestos during the 2024 House of Representatives election period. The voting data was used to visualize opinion distributions, launched as an experimental feature of JAPAN CHOICE.
+The Public Opinion Map launched as an experimental feature of JAPAN CHOICE, allows users to anonymously vote on specific issues extracted from party manifestos during the 2024 House of Representatives election period. The voting data was used to visualize opinion distributions.
 
 Over about two weeks, 4,403 unique users participated. This repository provides open access to that voting data.
 
@@ -24,12 +24,12 @@ The service uses *Polis*, a deliberation tool developed under the leadership of 
 The front end was redeveloped from scratch to suit Japan's context. Analysis of JAPAN CHOICE's user access revealed that 85% of the 3 million unique users accessed election information via mobile devices, necessitating optimization for small smartphone screens.
 
 Additional features include:
-- Visualization of party stances using party icons
+- Visualization of political party stances using party icons
 - AI-driven explanations of opinion clusters
-- Rapid updates of user opinions on the map
+- Rapid updates of user opinion position on the map
 
-## Visualization of Party Stances Using Party Icons
-The Public Opinion Map extracted voting issues directly from party manifestos. Each party’s stance—support, opposition, or neutrality—on each issue was encoded into data. This information was used to overlay party stances on the user opinion distribution scatterplot.
+## Visualization of Political Party Stances Using Party Icons
+The Public Opinion Map extracted voting issues directly from party manifestos. Each party’s stance —support, opposition, or neutral— on each issue was encoded into data. This information was used to overlay political parties stances on the user opinion distribution scatterplot.
 
 ![](/images/readme_icons.png)
 
@@ -38,10 +38,10 @@ Polis-generated clusters can be difficult for non-expert users to interpret. To 
 
 ![](/images/readme_label.png) ![](/images/readme_detail.png)
 
-## Rapid Updates of User Opinions on the Map
+## Rapid Updates of User Opinion Position on the Map
 By embedding projection matrix information from PCA on the client side, user positions on the scatterplot could be computed without querying the server. This enabled real-time screen updates in response to user voting actions.
 
-As a result, even though the Polis computation server is now inactive, the Public Opinion Map can still be experienced. This approach also allows the service to be demonstrated dynamically using the front end alone after the election period.
+As a result, even though the Polis computation server is now inactive, the YoronChizu can still be experienced. This approach also allows the service to be demonstrated using the front end alone after the election period.
 
 # Insights
 
@@ -85,7 +85,7 @@ On digital democracy—a topic underrepresented in party manifestos—JAPAN CHOI
 
 > 🤖 This group values safeguarding individual control over personal information and strengthening privacy laws to European standards. They support regulating online advertising and democratic decision-making through participatory agenda-setting systems.
 
-# Recommendations for Future Digital Democracy
+# Issues for Future Digital Democracy
 
 The process of extracting unbiased opinions from party manifestos required careful human effort. While LLMs could assist in this process, their potential for hallucination poses significant risks, necessitating cautious experimentation. In tests with LLM-generated content on digital democracy, the output quality was deemed insufficient, and the feature was not utilized.
 
