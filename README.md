@@ -1,5 +1,7 @@
 # YoronChizu 2024 Open Data
 
+2025-05-08 It is now open-source, see https://github.com/mielka/yoronchizu2024
+
 Other languages
 - [日本語 README](README_ja.md)
 
